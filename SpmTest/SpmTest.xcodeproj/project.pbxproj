@@ -17,6 +17,10 @@
 		CC7A4B1C2733E0B3000E4600 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC7A4B1B2733E0B3000E4600 /* PromiseKit */; };
 		CC7A4B1F2733E0CA000E4600 /* Resolver-Static in Frameworks */ = {isa = PBXBuildFile; productRef = CC7A4B1E2733E0CA000E4600 /* Resolver-Static */; };
 		CC7A4B222733E107000E4600 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CC7A4B212733E107000E4600 /* Kingfisher */; };
+		CC7A4B252733E346000E4600 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = CC7A4B242733E346000E4600 /* RxBlocking */; };
+		CC7A4B292733E346000E4600 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CC7A4B282733E346000E4600 /* RxRelay */; };
+		CC7A4B2B2733E346000E4600 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC7A4B2A2733E346000E4600 /* RxSwift */; };
+		CC7A4B302733E3E8000E4600 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC7A4B2F2733E3E8000E4600 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +40,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC7A4B222733E107000E4600 /* Kingfisher in Frameworks */,
+				CC7A4B292733E346000E4600 /* RxRelay in Frameworks */,
 				CC2CDC51271FF2F6004F8DAB /* Alamofire in Frameworks */,
 				CC7A4B1F2733E0CA000E4600 /* Resolver-Static in Frameworks */,
 				CC7A4B1C2733E0B3000E4600 /* PromiseKit in Frameworks */,
+				CC7A4B2B2733E346000E4600 /* RxSwift in Frameworks */,
+				CC7A4B252733E346000E4600 /* RxBlocking in Frameworks */,
+				CC7A4B302733E3E8000E4600 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +104,10 @@
 				CC7A4B1B2733E0B3000E4600 /* PromiseKit */,
 				CC7A4B1E2733E0CA000E4600 /* Resolver-Static */,
 				CC7A4B212733E107000E4600 /* Kingfisher */,
+				CC7A4B242733E346000E4600 /* RxBlocking */,
+				CC7A4B282733E346000E4600 /* RxRelay */,
+				CC7A4B2A2733E346000E4600 /* RxSwift */,
+				CC7A4B2F2733E3E8000E4600 /* SnapKit */,
 			);
 			productName = SpmTest;
 			productReference = CC2CDC38271FF2A8004F8DAB /* SpmTest.app */;
@@ -130,6 +142,8 @@
 				CC7A4B1A2733E0B3000E4600 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 				CC7A4B1D2733E0CA000E4600 /* XCRemoteSwiftPackageReference "Resolver" */,
 				CC7A4B202733E107000E4600 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				CC7A4B232733E346000E4600 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				CC7A4B2E2733E3E8000E4600 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = CC2CDC39271FF2A8004F8DAB /* Products */;
 			projectDirPath = "";
@@ -418,6 +432,22 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		CC7A4B232733E346000E4600 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		CC7A4B2E2733E3E8000E4600 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -440,6 +470,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CC7A4B202733E107000E4600 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		CC7A4B242733E346000E4600 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7A4B232733E346000E4600 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		CC7A4B282733E346000E4600 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7A4B232733E346000E4600 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		CC7A4B2A2733E346000E4600 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7A4B232733E346000E4600 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		CC7A4B2F2733E3E8000E4600 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7A4B2E2733E3E8000E4600 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
