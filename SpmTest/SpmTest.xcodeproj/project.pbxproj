@@ -14,6 +14,9 @@
 		CC2CDC45271FF2A9004F8DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2CDC44271FF2A9004F8DAB /* Assets.xcassets */; };
 		CC2CDC48271FF2A9004F8DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2CDC46271FF2A9004F8DAB /* LaunchScreen.storyboard */; };
 		CC2CDC51271FF2F6004F8DAB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CC2CDC50271FF2F6004F8DAB /* Alamofire */; };
+		CC7A4B1C2733E0B3000E4600 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC7A4B1B2733E0B3000E4600 /* PromiseKit */; };
+		CC7A4B1F2733E0CA000E4600 /* Resolver-Static in Frameworks */ = {isa = PBXBuildFile; productRef = CC7A4B1E2733E0CA000E4600 /* Resolver-Static */; };
+		CC7A4B222733E107000E4600 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CC7A4B212733E107000E4600 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7A4B222733E107000E4600 /* Kingfisher in Frameworks */,
 				CC2CDC51271FF2F6004F8DAB /* Alamofire in Frameworks */,
+				CC7A4B1F2733E0CA000E4600 /* Resolver-Static in Frameworks */,
+				CC7A4B1C2733E0B3000E4600 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +93,9 @@
 			name = SpmTest;
 			packageProductDependencies = (
 				CC2CDC50271FF2F6004F8DAB /* Alamofire */,
+				CC7A4B1B2733E0B3000E4600 /* PromiseKit */,
+				CC7A4B1E2733E0CA000E4600 /* Resolver-Static */,
+				CC7A4B212733E107000E4600 /* Kingfisher */,
 			);
 			productName = SpmTest;
 			productReference = CC2CDC38271FF2A8004F8DAB /* SpmTest.app */;
@@ -118,6 +127,9 @@
 			mainGroup = CC2CDC2F271FF2A8004F8DAB;
 			packageReferences = (
 				CC2CDC4F271FF2F6004F8DAB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CC7A4B1A2733E0B3000E4600 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				CC7A4B1D2733E0CA000E4600 /* XCRemoteSwiftPackageReference "Resolver" */,
+				CC7A4B202733E107000E4600 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = CC2CDC39271FF2A8004F8DAB /* Products */;
 			projectDirPath = "";
@@ -382,6 +394,30 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		CC7A4B1A2733E0B3000E4600 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				branch = v6;
+				kind = branch;
+			};
+		};
+		CC7A4B1D2733E0CA000E4600 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CC7A4B202733E107000E4600 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -389,6 +425,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CC2CDC4F271FF2F6004F8DAB /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		CC7A4B1B2733E0B3000E4600 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7A4B1A2733E0B3000E4600 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		CC7A4B1E2733E0CA000E4600 /* Resolver-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7A4B1D2733E0CA000E4600 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = "Resolver-Static";
+		};
+		CC7A4B212733E107000E4600 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7A4B202733E107000E4600 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

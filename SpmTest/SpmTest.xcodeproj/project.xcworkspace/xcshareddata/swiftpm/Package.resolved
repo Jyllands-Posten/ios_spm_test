@@ -9,6 +9,33 @@
           "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
           "version": "5.4.4"
         }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher",
+        "state": {
+          "branch": null,
+          "revision": "318e319998bf555c3e914d5c3adb6da05af86a32",
+          "version": "7.1.1"
+        }
+      },
+      {
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit",
+        "state": {
+          "branch": "v6",
+          "revision": "00afea5360bf1c02ac83209c2c8991f73b5a4e7d",
+          "version": null
+        }
+      },
+      {
+        "package": "Resolver",
+        "repositoryURL": "https://github.com/hmlongco/Resolver",
+        "state": {
+          "branch": "master",
+          "revision": "d59a8dd6b2bd66fd080089fb7df8a97b99fc7d53",
+          "version": null
+        }
       }
     ]
   },
